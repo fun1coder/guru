@@ -9,7 +9,7 @@ from datetime import datetime
 
 def index(request):
     newsApi = NewsApiClient(api_key='ba2614da832e40dd9d395e1d1c77c995')
-    headLines = newsApi.get_everything(sources='bbc-news')
+    headLines = newsApi.get_everything(sources='national-geographic,the-verge,techcrunch,techradar,fortune,new-scientist,next-big-future')
     articles = headLines['articles']
     desc = []
     news = []
